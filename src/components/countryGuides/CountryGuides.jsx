@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import ajaxCall from "@/helpers/ajaxCall";
-import ReactHtmlParser from "react-html-parser";
+import parse from 'html-react-parser';
 import { Search, ArrowRight, GraduationCap } from "lucide-react";
 
 const CountryGuides = () => {
@@ -202,7 +202,7 @@ const CountryGuides = () => {
                       Why Study in {country.name}?
                     </h4>
                     <div className="text-gray-600 text-sm line-clamp-3">
-                      {ReactHtmlParser(
+                      {parse(
                         country.description
                           ?.replace(/<[^>]+>/g, "")
                           .substring(0, 200) ||

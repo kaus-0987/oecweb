@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import ajaxCall from "@/helpers/ajaxCall";
-import ReactHtmlParser from "react-html-parser";
+import parse from 'html-react-parser';
 import { ChevronDown, ArrowRight, Globe } from "lucide-react";
 
 const ExpandableSection = ({ title, children, defaultOpen = false }) => {
@@ -108,7 +108,7 @@ const CountryGuides = () => {
                   </div>
 
                   <div className="prose prose-sm max-w-none text-gray-600 line-clamp-3 mb-4">
-                    {ReactHtmlParser(
+                    {parse(
                       country.description
                         .replace(/<[^>]+>/g, "")
                         .substring(0, 200)

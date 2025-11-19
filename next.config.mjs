@@ -1,5 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ['sweekarme.in', 'anantsoftcomputing.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'sweekarme.in',
+        pathname: '/:path*',
+      },
+      {
+        protocol: 'https',
+        hostname: 'anantsoftcomputing.com',
+        pathname: '/:path*',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.sweekarme.in',
+        pathname: '/:path*',
+      },
+    ],
+  },
   async rewrites() {
     return [
       // Specific CRM login route - serve from oeccrm folder
