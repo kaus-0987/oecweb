@@ -7,16 +7,17 @@ export const metadata = {
   title: "OEC India - Best Overseas Education Consultants for Study Abroad",
   description:
     "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
-  other: {
-    "google-site-verification": "BBEJORnmYafy3WXKp8YM_vAEOoWDnJp7kh2XtH4-6LI",
-  },
   icons: {
     icon: [
       { url: "/oec.png" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    apple: {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
     shortcut: "/oec.png",
   },
   openGraph: {
@@ -54,6 +55,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="BBEJORnmYafy3WXKp8YM_vAEOoWDnJp7kh2XtH4-6LI"
+        />
+      </head>
       <body>
         <Header />
         {children}
