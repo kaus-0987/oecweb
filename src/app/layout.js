@@ -7,6 +7,9 @@ export const metadata = {
   title: "OEC India - Best Overseas Education Consultants for Study Abroad",
   description:
     "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
+  other: {
+    "google-site-verification": "BBEJORnmYafy3WXKp8YM_vAEOoWDnJp7kh2XtH4-6LI",
+  },
   icons: {
     icon: [
       { url: "/oec.png" },
