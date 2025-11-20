@@ -5,7 +5,8 @@ import BottomNavigation from "@/components/ui/BottomNavigation";
 
 export const metadata = {
   title: "OEC India - Best Overseas Education Consultants for Study Abroad",
-  description: "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
+  description: 
+  "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
   icons: {
     icon: [
       { url: "/oec.png" },
